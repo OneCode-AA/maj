@@ -14,6 +14,18 @@
 
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "oEu5D8cN81B7XUakZ",
+      });
+   })();
+</script>
+
 </head>
 <body>
     <header id="header" class="header">
@@ -90,10 +102,30 @@
             <article class="service-container">
                 <section class="service">
                     
-                    <h3>Plumbing</h3>
+                    <h3>Electrical</h3>
                    
                 </section>
                 <section class="service">
+                   
+                    <h3>Security Cameras</h3>
+                  
+                </section>
+                <section class="service">
+                  
+                    <h3>Painting</h3>
+                  
+                </section>
+                <section class="service">
+                 
+                    <h3>Roofing Woods/Tiles</h3>
+                   
+                </section>
+                <section class="service">
+                    
+                    <h3>and More..</h3>
+                   
+                </section>
+                <!-- <section class="service">
                    
                     <h3>Electrical</h3>
                   
@@ -107,7 +139,7 @@
                  
                     <h3>Carpentry</h3>
                    
-                </section>
+                </section> -->
             </article>
     </section>
    
@@ -115,19 +147,19 @@
         <h2>What Our Clients Say</h2>
         <article class="testimonial-slider">
             <section class="testimonial">
-                <q>Coming Soon</q>
+                <q>1. Coming Soon</q>
             </section>
             <section class="testimonial">
-                <q>Coming Soon</q>
+                <q>2. Coming Soon</q>
             </section>
             <section class="testimonial"> 
-                <q>Coming Soon</q>
+                <q>3. Coming Soon</q>
             </section>
             <section class="testimonial">
-                <q>Coming Soon</q>
+                <q>4. Coming Soon</q>
             </section>
             <section class="testimonial">
-                <q>Coming Soon</q>
+                <q>5. Coming Soon</q>
             </section>
         </article>
     </section>
@@ -142,15 +174,16 @@
                     </p>
                 </section>
                 <section class="contact-form">
-                    <form action="" method="post" id="contactForm">
+                    <form action="" method="post" id="contactForm" onsubmit="sendMail(event)">
                         <label for="name">Name:</label>
                         <input type="text" id="name" name="name" required>
                         <label for="email">Email:</label>
                         <input type="email" id="email" name="email" required>
                         <label for="message">Message:</label>
                         <textarea id="message" name="message" required></textarea>
-                        <button type="submit">Send</button>
+                        <button type="submit" onclick="sendMail()">Send</button>
                     </form>
+                    
                 </section>
             </article>
  
@@ -161,5 +194,6 @@
     </footer>
 </div>
     <script src="/assets/js/script.js"></script>
+  
 </body>
 </html>

@@ -30,21 +30,44 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+function sendMail(event) {
+    event.preventDefault(); // Prevent the default form submission behavior
+    var params = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      message: document.getElementById("message").value,
+    };
+  
+    const serviceID = "service_sxlrscb";
+    const templateID = "template_53bl1ze";
+  
+      emailjs.send(serviceID, templateID, params)
+      .then(res =>{
+          document.getElementById("name").value = "";
+          document.getElementById("email").value = "";
+          document.getElementById("message").value = "";
+          console.log(res);
+          alert("Your message sent successfully!!")
+  
+      })
+      .catch(err=>console.log(err));
+  
+  }
 
-document.getElementById('contactForm').addEventListener("submit", function(event) {
-    event.preventDefault();
-    const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const message = document.getElementById('message').value.trim();
+// document.getElementById('contactForm').addEventListener("submit", function(event) {
+//     event.preventDefault();
+//     const name = document.getElementById('name').value.trim();
+//     const email = document.getElementById('email').value.trim();
+//     const message = document.getElementById('message').value.trim();
 
 
-    if (name === "" || email === "" || message === "") {
-        alert("All fields are required");  
-    } else {
-        alert("Thank you! Your message has been sent");
-        this.reset();
-    }
-});
+//     if (name === "" || email === "" || message === "") {
+//         alert("All fields are required");  
+//     } else {
+//         alert("Thank you! Your message has been sent");
+//         this.reset();
+//     }
+// });
 
 let index = 0;
 function showNextTestimonial() {
