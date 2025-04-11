@@ -1,0 +1,39 @@
+@media (min-width: 768px) {
+
+    .header-container {
+        max-width: 80vw;
+    }
+
+.xo {
+    display: unset;
+}
+
+    .contact-btn span:nth-child(2) {
+        display: unset;
+      }
+      
+
+    .nav {
+        height: 96vh;
+      }
+
+    .nav.opened {
+        top: 4vh;
+      }
+
+  .nav-ul {
+    flex-direction: unset;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 3rem;
+  }
+
+  .nav-li {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    flex: 1;
+  }
+
+
+}

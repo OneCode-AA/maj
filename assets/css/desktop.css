@@ -1,0 +1,20 @@
+@media (min-width: 1024px) {
+
+    .ox {
+        display: unset;
+      }
+
+    .nav-li p,
+    .nav-li .socials-ul {
+      display: unset;
+    }
+    .contact-btn span:nth-child(3) {
+        display: unset;
+      }
+
+      .service-container {
+
+        flex-direction: unset;
+      
+    }
+}
