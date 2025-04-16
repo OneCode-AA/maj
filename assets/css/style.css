@@ -40,6 +40,10 @@ a {
   color: var(--text-secondary);
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -87,7 +91,15 @@ a {
   display: flex;
   flex-direction: column;
   gap: 3px;
+  border-radius: 1rem;
+  border: 1px solid #000;
+  background: #fff;
 
+}
+
+.menu:hover {
+  background: var(--bg-secondary);
+  transition: var(--transition);
 }
 
 .menu span {
@@ -95,6 +107,9 @@ a {
   height: 2px;
   width: 15px;
   background: var(--text-secondary);
+}
+.menu:hover span {
+  background: var(--text-primary);
 }
 
 
@@ -188,6 +203,19 @@ ion-icon {
   text-decoration: underline;
 }
 
+
+.socials-li-a ion-icon {
+  font-size: 2rem;
+ 
+  transition: var(--transition);
+}
+
+.socials-li-a ion-icon:hover {
+  color: dodgerblue;
+  transform: scale(1.2);
+ 
+}
+
 main {
   padding-block: 65px;
 }
@@ -238,7 +266,7 @@ main > section {
 .service-container {
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     flex-direction: column;
     gap: 20px;
 }

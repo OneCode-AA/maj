@@ -1,6 +1,13 @@
 const menu = document.getElementById('menu')
 const nav = document.getElementById('nav')
-
+const navLinks = document.querySelectorAll('nav ul li a')
+const closeMenu = () => {
+    nav.classList.remove('opened')
+    menu.classList.remove('opened')
+}
+navLinks.forEach(link => {
+    link.addEventListener('click', closeMenu)
+})
 
 
 

@@ -34,6 +34,9 @@
     gap: 4rem;
     flex: 1;
   }
-
+ .service-container {
+  flex-direction: unset;
+  flex-wrap: wrap;
+ }
 
 }
