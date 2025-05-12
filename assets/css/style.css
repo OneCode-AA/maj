@@ -87,29 +87,38 @@ button:hover {
 }
 
 .menu {
-  padding: 4px 5px;
+  height: 28px;
+  width: 35px;
+  padding: 1px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  border: none;
   gap: 3px;
-  border-radius: 1rem;
-  border: 1px solid #000;
-  background: #fff;
+  background: transparent;
 
 }
 
-.menu:hover {
-  background: var(--bg-secondary);
-  transition: var(--transition);
-}
 
 .menu span {
   display: block;
   height: 2px;
-  width: 15px;
   background: var(--text-secondary);
 }
+
+.menu .first {
+  width: 27px;
+}
+.menu .second {
+  width: 20px;
+}
+.menu .third {
+  width: 15px;
+}
+
 .menu:hover span {
-  background: var(--text-primary);
+  background: var(--bg-secondary);
 }
 
 
@@ -126,32 +135,7 @@ ion-icon {
   color: var(--text-secondary);
 }
 
-.contact-btn {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  background: var(--text-secondary);
-  color: var(--text-primary);
-  padding: 4px 8px;
-  border: 1px solid var(--border-color) ;
-  border-radius: 1rem;
-}
 
-.contact-btn:hover {
-  background: var(--bg-secondary);
-}
-
-.contact-btn span:nth-child(2) {
-  display: none;
-}
-
-.contact-btn span:nth-child(3) {
-  display: none;
-}
-
-.contact-btn ion-icon {
-  color: var(--text-primary);
-}
 
 .nav {
   display: none;
@@ -263,6 +247,32 @@ main > section {
     gap: 3rem;
 }
 
+.about {
+   padding: 10rem;
+  
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.gallery-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+
+}
+
+.gallery-flex img {
+  height: 200px;
+}
+
 .service-container {
     display: flex;
     justify-content: center;
@@ -323,6 +333,10 @@ form button {
     padding: 10px;
     border: none;
     cursor: pointer;
+}
+
+.contact-info a {
+  color: var(--text-primary);
 }
 
 footer {

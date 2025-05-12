@@ -8,9 +8,18 @@
     .nav-li .socials-ul {
       display: unset;
     }
-    .contact-btn span:nth-child(3) {
-        display: unset;
-      }
+
+      .about-content {
+
+  flex-direction: unset;
+}
+
+.gallery-flex {
+
+  flex-direction: unset;
+
+
+}
 
       .service-container {
 
